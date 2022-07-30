@@ -10,6 +10,6 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/naming-convention': 'off',
-    '@typescript-eslint/consistent-indexed-object-style': 'off',
+    'no-process-env': 'off',
   },
 };

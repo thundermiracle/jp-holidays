@@ -4,7 +4,7 @@ specifiers:
   '@types/node': ^18.6.2
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
-  '@web-configs/eslint-plugin': ^0.4.3
+  '@web-configs/eslint-plugin': ^0.5.0
   '@web-configs/prettier': ^0.1.2
   '@web-configs/typescript': ^0.2.2
   dayjs: ^1.11.4
@@ -26,7 +26,7 @@ devDependencies:
   '@types/node': 18.6.2
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
-  '@web-configs/eslint-plugin': 0.4.3_ijbi6w23bd7loaoq7h2owacjjq
+  '@web-configs/eslint-plugin': 0.5.0_ijbi6w23bd7loaoq7h2owacjjq
   '@web-configs/prettier': 0.1.2
   '@web-configs/typescript': 0.2.2
   eslint: 8.20.0
@@ -950,10 +950,10 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@web-configs/eslint-plugin/0.4.3_ijbi6w23bd7loaoq7h2owacjjq:
-    resolution: {integrity: sha512-bdWDEPlE/iBzf9Ij+efugUGzI9vUcJ2iYpe8rExFWcpZQ3cbfCXODNZd2VO8lFYnqhR1Ntozadh6lgBwIGrKAw==}
+  /@web-configs/eslint-plugin/0.5.0_ijbi6w23bd7loaoq7h2owacjjq:
+    resolution: {integrity: sha512-z650SNBb5IcqnMqE1MQ5EznqUkqS+a5i229Ez0A9vUQt8vXWich78xnuVZMaRIUqg+PVyYBN9bcQo4UlJJLyUw==}
     peerDependencies:
-      eslint: ^8.17.0
+      eslint: ^8.20.0
     dependencies:
       '@babel/core': 7.18.9
       '@babel/eslint-parser': 7.18.9_454u7sltq2wfyzqnoclqps3oeu
