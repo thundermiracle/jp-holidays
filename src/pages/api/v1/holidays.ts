@@ -11,3 +11,7 @@ export default function handler(_req: NextRequest) {
     today: dayjs().format('YYYY-MM-DD'),
   });
 }
+
+export const config = {
+  runtime: 'experimental-edge',
+};
