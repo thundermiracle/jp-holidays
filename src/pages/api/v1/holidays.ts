@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 
-import { createCacheResponse } from '../_utils';
+import { createCacheResponse } from 'src/utils/edgeHelpers';
 
 import type { NextRequest } from 'next/server';
 
