@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"]
+    }
   },
   "extends": "@web-configs/typescript/nextjs.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
