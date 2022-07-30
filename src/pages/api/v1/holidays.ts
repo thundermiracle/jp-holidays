@@ -1,14 +1,20 @@
-import dayjs from 'dayjs';
-
-import { createCacheResponse } from 'src/utils/edgeHelpers';
+import {
+  createCacheResponse,
+  createErrorResponse,
+  getFromTo,
+} from 'src/utils/edgeHelpers';
 
 import type { NextRequest } from 'next/server';
 
-export default function handler(_req: NextRequest) {
-  // const url = req.url;
+export default function handler(req: NextRequest) {
+  const { error, data } = getFromTo(req.url);
+  if (data == null) {
+    return createErrorResponse(error);
+  }
 
   return createCacheResponse({
-    today: dayjs().format('YYYY-MM-DD'),
+    from: data.from.format('YYYY-MM-DD'),
+    to: data.to.format('YYYY-MM-DD'),
   });
 }
 

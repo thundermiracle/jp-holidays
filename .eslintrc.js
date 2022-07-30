@@ -10,5 +10,6 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/naming-convention': 'off',
+    'no-process-env': 'off',
   },
 };
