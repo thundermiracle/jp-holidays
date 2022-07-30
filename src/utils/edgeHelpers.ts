@@ -27,7 +27,7 @@ export function getQueryParams(
   url: string,
   queryParams: string[],
 ): (string | null)[] {
-  const query = new URLSearchParams(url);
+  const query = new URL(url).searchParams;
 
   return queryParams.map((key) => query.get(key));
 }
@@ -47,7 +47,7 @@ export function getFromTo(url: string): {
   const data = { from: dayjs(from), to: dayjs(to) };
 
   // validate
-  if (!data.from.isValid() || !data.to.isValid()) {
+  if (!data.from.isValid() || (to != null && !data.to.isValid())) {
     return { error: 'query parameter "from" or "to" is not a valid date' };
   }
 

@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
+    "target": "es6",
+
     "baseUrl": ".",
     "paths": {
       "src/*": ["src/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
   "extends": "@web-configs/typescript/nextjs.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
