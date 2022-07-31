@@ -3,6 +3,7 @@ import {
   createErrorResponse,
   getFromTo,
   getHolidays,
+  getOptions,
 } from 'src/utils/edgeHelpers';
 
 import type { NextRequest } from 'next/server';
@@ -13,7 +14,9 @@ export default function handler(req: NextRequest) {
     return createErrorResponse(error);
   }
 
-  const holidays = getHolidays(data.from, data.to);
+  const { only_weekday } = getOptions(req.url);
+
+  const holidays = getHolidays(data.from, data.to, only_weekday != null);
   return createCacheResponse(holidays);
 }
 

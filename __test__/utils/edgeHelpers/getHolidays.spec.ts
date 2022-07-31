@@ -5,6 +5,8 @@ import { getHolidays } from 'src/utils/edgeHelpers';
 vitest.mock('src/data/jp-holidays', () => {
   return {
     JP_HOLIDAYS: {
+      '20190105': '土曜日',
+      '20190106': '日曜日',
       '20220101': '元日',
       '20220110': '成人の日',
       '20220211': '建国記念の日',
@@ -57,4 +59,19 @@ describe('getHolidays', () => {
       expect(getHolidays(dayjs(from), dayjs(to))).toStrictEqual(expected);
     },
   );
+
+  it("remove weekends from result when 'only_weekday' is true", () => {
+    const resultWithoutFlag = getHolidays(dayjs('20190101'), dayjs('20191231'));
+    const resultWithFlag = getHolidays(
+      dayjs('20190101'),
+      dayjs('20191231'),
+      true,
+    );
+
+    expect(resultWithoutFlag).toStrictEqual({
+      '20190105': '土曜日',
+      '20190106': '日曜日',
+    });
+    expect(resultWithFlag).toStrictEqual({});
+  });
 });
