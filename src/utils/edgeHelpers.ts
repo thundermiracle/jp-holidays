@@ -1,6 +1,8 @@
 import dayjs from 'dayjs';
 import { NextResponse } from 'next/server';
 
+import { JP_HOLIDAYS } from 'src/data/jp-holidays';
+
 export function createCacheResponse(data: { [key: string | number]: any }) {
   return NextResponse.json(data, {
     status: 200,
@@ -57,4 +59,26 @@ export function getFromTo(url: string): {
   }
 
   return { data };
+}
+
+// @TODO: improve algorithm
+export function getHolidays(from: dayjs.Dayjs, to: dayjs.Dayjs) {
+  const holidays: Record<string, string> = {};
+
+  const fromStr = from.format('YYYYMMDD');
+  const toStr = to.format('YYYYMMDD');
+
+  for (const [holidayDateStr, holidayName] of Object.entries(JP_HOLIDAYS)) {
+    if (holidayDateStr >= fromStr && holidayDateStr <= toStr) {
+      holidays[holidayDateStr] = holidayName;
+      continue;
+    }
+
+    // As JP_HOLIDAYS is sorted by date, we can stop iterating when we reach the last date
+    if (holidayDateStr > toStr) {
+      break;
+    }
+  }
+
+  return holidays;
 }

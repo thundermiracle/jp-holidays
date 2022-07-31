@@ -2,6 +2,7 @@ import {
   createCacheResponse,
   createErrorResponse,
   getFromTo,
+  getHolidays,
 } from 'src/utils/edgeHelpers';
 
 import type { NextRequest } from 'next/server';
@@ -12,10 +13,8 @@ export default function handler(req: NextRequest) {
     return createErrorResponse(error);
   }
 
-  return createCacheResponse({
-    from: data.from.format('YYYY-MM-DD'),
-    to: data.to.format('YYYY-MM-DD'),
-  });
+  const holidays = getHolidays(data.from, data.to);
+  return createCacheResponse(holidays);
 }
 
 export const config = {
