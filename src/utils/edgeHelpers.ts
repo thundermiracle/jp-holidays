@@ -36,6 +36,14 @@ export function getQueryParams(
   return queryParams.map((key) => query.get(key));
 }
 
+export function getOptions(url: string): Record<string, string | null> {
+  const query = new URL(url).searchParams;
+
+  return {
+    only_weekday: query.get('only_weekday'),
+  };
+}
+
 export function getFromTo(url: string): {
   error?: string;
   data?: { from: dayjs.Dayjs; to: dayjs.Dayjs };
@@ -63,8 +71,17 @@ export function getFromTo(url: string): {
   return { data };
 }
 
+export function isWeekend(dateStr: string): boolean {
+  const date = dayjs(dateStr);
+  return date.day() === 0 || date.day() === 6;
+}
+
 // @TODO: improve algorithm
-export function getHolidays(from: dayjs.Dayjs, to: dayjs.Dayjs) {
+export function getHolidays(
+  from: dayjs.Dayjs,
+  to: dayjs.Dayjs,
+  only_weekday?: boolean,
+): Record<string, any> {
   const holidays: Record<string, string> = {};
 
   const fromStr = from.format('YYYYMMDD');
@@ -72,7 +89,10 @@ export function getHolidays(from: dayjs.Dayjs, to: dayjs.Dayjs) {
 
   for (const [holidayDateStr, holidayName] of Object.entries(JP_HOLIDAYS)) {
     if (holidayDateStr >= fromStr && holidayDateStr <= toStr) {
-      holidays[holidayDateStr] = holidayName;
+      // remove holidays in weekends
+      if (!only_weekday || (only_weekday && !isWeekend(holidayDateStr))) {
+        holidays[holidayDateStr] = holidayName;
+      }
       continue;
     }
 
