@@ -3,7 +3,9 @@ import { NextResponse } from 'next/server';
 
 import { JP_HOLIDAYS } from 'src/data/jp-holidays';
 
-export function createCacheResponse(data: { [key: string | number]: any }) {
+export function createCacheResponse(
+  data: Record<string, any> | string | number,
+) {
   return NextResponse.json(data, {
     status: 200,
     headers: {
