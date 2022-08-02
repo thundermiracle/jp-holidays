@@ -10,7 +10,10 @@
     "lint": "next lint",
     "test": "vitest run",
     "test:w": "vitest",
-    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'"
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx}'",
+    "batch:ts": "tsx batch/index.ts",
+    "pack:batch": "ncc build batch/index.ts -o dist --source-map --license licenses.txt",
+    "batch": "node dist/index.js"
   },
   "dependencies": {
     "dayjs": "^1.11.4",
@@ -20,15 +23,18 @@
   },
   "devDependencies": {
     "@edge-runtime/vm": "1.1.0-beta.23",
+    "@vercel/ncc": "^0.34.0",
     "@types/node": "^18.6.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@web-configs/eslint-plugin": "^0.5.0",
     "@web-configs/prettier": "^0.1.2",
     "@web-configs/typescript": "^0.2.2",
+    "axios": "^0.27.2",
     "eslint": "^8.21.0",
     "eslint-config-next": "^12.2.3",
     "prettier": "^2.7.1",
+    "tsx": "^3.8.0",
     "typescript": "^4.7.4",
     "vitest": "^0.20.2"
   },
