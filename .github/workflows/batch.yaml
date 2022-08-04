@@ -35,7 +35,7 @@ jobs:
         id: update-jp-holidays
         if: steps.assert-pull-request-not-exists.outputs.result
         run: |
-          dist/index
+          node ./dist/index.js
 
           if [ -n "$(git status -zu)" ]; then
             git checkout -B github-actions/batch/jp-holidays-batch
