@@ -1,0 +1,62 @@
+name: Weekly Batch
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  jp-holidays-batch:
+    runs-on: ubuntu-latest
+    env:
+      GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+      GIT_AUTHOR_NAME: github-actions[bot]
+      GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
+      GIT_COMMITTER_NAME: github-actions[bot]
+      NODE_OPTIONS: --max_old_space_size=7168
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Check if PR already exists
+        id: assert-pull-request-not-exists
+        uses: actions/github-script@v6
+        with:
+          script: |
+            return !(await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: `open`,
+              head: `${context.repo.owner}:github-actions/batch/jp-holidays-batch`,
+              base: `main`,
+            })).data.length
+
+      - name: Run batch and create commit
+        id: update-jp-holidays
+        if: steps.assert-pull-request-not-exists.outputs.result
+        run: |
+          dist/index
+
+          if [ -n "$(git status -zu)" ]; then
+            git checkout -B github-actions/batch/jp-holidays-batch
+            git add '*'
+            git commit -m 'build: update jp-holidays.ts'
+            git push origin github-actions/batch/jp-holidays-batch
+            echo '::set-output name=result::true'
+          fi
+
+      - name: Create PR
+        if: steps.update-jp-holidays.outputs.result
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            return (await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `build: update jp-holidays.ts`,
+              head: `${context.repo.owner}:github-actions/batch/jp-holidays-batch`,
+              base: `main`,
+              draft: false,
+            })).data.number
+  
