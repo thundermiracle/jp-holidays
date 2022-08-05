@@ -48,15 +48,20 @@ export function getFromTo(url: string): {
   error?: string;
   data?: { from: dayjs.Dayjs; to: dayjs.Dayjs };
 } {
-  const [from, to] = getQueryParams(url, ['from', 'to']);
-  if (from == null) {
+  const [from, to, offset] = getQueryParams(url, ['from', 'to', 'offset']);
+  if (from == null && offset == null) {
     return {
-      error: 'Missing "from" query parameter',
+      error: '"from" or "offset" query parameter is required',
     };
   }
 
   // format
-  const data = { from: dayjs(from), to: dayjs(to) };
+  const data = {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    from: dayjs(from ?? dayjs().add(...offset!.split(' '))),
+    to: dayjs(to),
+  };
 
   // validate
   if (!data.from.isValid() || (to != null && !data.to.isValid())) {
@@ -64,8 +69,8 @@ export function getFromTo(url: string): {
   }
 
   // validate range
-  if (to == null || dayjs(to).isBefore(dayjs(from))) {
-    data.to = dayjs(from).add(14, 'day');
+  if (to == null || dayjs(to).isBefore(data.from)) {
+    data.to = data.from.add(14, 'day');
   }
 
   return { data };
