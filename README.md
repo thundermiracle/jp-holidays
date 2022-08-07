@@ -11,11 +11,12 @@ Base URL: `https://jp-holidays.vercel.app`
 
 ## Available Parameters
 
-| Parameter | Required | Default | Description                                                           |
-| --------- | :------: | :-----: | --------------------------------------------------------------------- |
-| from      |  string  |    △    | start date <br /> \* required if offset is not set                    |
-| to        |  string  |         | end date <br /> \* will be from+14 days if not set                    |
-| offset    |  string  |    △    | offset from today (exp: 4 days) <br /> \* required if from is not set |
+| Parameter    |  Type   | Required | Default | Description                                                           |
+| ------------ | :-----: | :------: | :-----: | --------------------------------------------------------------------- |
+| from         | string  |    △     |         | start date <br /> \* required if offset is not set                    |
+| to           | string  |          |         | end date <br /> \* will be from+14 days if not set                    |
+| offset       | string  |    △     |         | offset from today (exp: 4 days) <br /> \* required if from is not set |
+| only_weekday | boolean |          |  false  | only return holidays in weekdays                                      |
 
 ## Examples
 
