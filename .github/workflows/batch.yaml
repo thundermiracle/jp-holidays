@@ -1,9 +1,10 @@
 name: Weekly Batch
 
 on:
-  schedule:
-    - cron: '0 0 * * 1'
-  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 0 * * 1'
+  # workflow_dispatch:
+  pull_request:
 
 jobs:
   jp-holidays-batch:
@@ -35,6 +36,7 @@ jobs:
         id: update-jp-holidays
         if: steps.assert-pull-request-not-exists.outputs.result
         run: |
+          echo "${{ steps.assert-pull-request-not-exists.outputs.result }}"
           node ./dist/index.js
 
           if [ -n "$(git status -zu)" ]; then
@@ -46,6 +48,7 @@ jobs:
           fi
 
       - name: Create PR
+        id: create-pr
         if: steps.update-jp-holidays.outputs.result
         uses: actions/github-script@v6
         with:
