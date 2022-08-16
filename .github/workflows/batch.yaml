@@ -9,7 +9,7 @@ on:
 jobs:
   jp-holidays-batch:
     runs-on: ubuntu-latest
-    permissions: write-all
+    timeout-minutes: 2
     env:
       GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
       GIT_AUTHOR_NAME: github-actions[bot]
@@ -52,7 +52,7 @@ jobs:
         if: steps.update-jp-holidays.outputs.result == 'true'
         uses: actions/github-script@v6
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{secrets.REPO_TOKEN}}
           script: |
             return (await github.rest.pulls.create({
               owner: context.repo.owner,
