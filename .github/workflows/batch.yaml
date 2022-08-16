@@ -64,7 +64,7 @@ jobs:
             })).data.number
 
       - name: Enable automerge
-        if: steps.create-pr.outputs.result != 'undefined'
+        if: steps.create-pr.outputs.result
         uses: peter-evans/enable-pull-request-automerge@v2
         with:
           token: ${{secrets.REPO_TOKEN}}
