@@ -34,9 +34,8 @@ jobs:
 
       - name: Run batch and create commit
         id: update-jp-holidays
-        if: steps.assert-pull-request-not-exists.outputs.result
+        if: steps.assert-pull-request-not-exists.outputs.result == 'true'
         run: |
-          echo "${{ steps.assert-pull-request-not-exists.outputs.result }}"
           node ./dist/index.js
 
           if [ -n "$(git status -zu)" ]; then
@@ -48,8 +47,7 @@ jobs:
           fi
 
       - name: Create PR
-        id: create-pr
-        if: steps.update-jp-holidays.outputs.result
+        if: steps.update-jp-holidays.outputs.result == 'true'
         uses: actions/github-script@v6
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
