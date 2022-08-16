@@ -1,10 +1,9 @@
 name: Weekly Batch
 
 on:
-  # schedule:
-  #   - cron: '0 0 * * 1'
-  # workflow_dispatch:
-  pull_request:
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
 
 jobs:
   jp-holidays-batch:
