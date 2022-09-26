@@ -70,7 +70,8 @@ export function getFromTo(url: string): {
 
   // validate range
   if (to == null || dayjs(to).isBefore(data.from)) {
-    data.to = data.from.add(14, 'day');
+    // 2 weeks
+    data.to = data.from.add(13, 'day');
   }
 
   return { data };

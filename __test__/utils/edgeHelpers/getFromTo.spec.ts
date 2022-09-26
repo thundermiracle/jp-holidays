@@ -48,7 +48,7 @@ describe('getFromTo', () => {
     const { data } = getFromTo(url);
 
     expect(data?.from.format('YYYYMMDD')).toBe('20100101');
-    expect(data?.to.format('YYYYMMDD')).toBe('20100115');
+    expect(data?.to.format('YYYYMMDD')).toBe('20100114');
   });
 
   it('plus 2 weeks from from if to is before from', () => {
@@ -56,7 +56,7 @@ describe('getFromTo', () => {
     const { data } = getFromTo(url);
 
     expect(data?.from.format('YYYYMMDD')).toBe('20100101');
-    expect(data?.to.format('YYYYMMDD')).toBe('20100115');
+    expect(data?.to.format('YYYYMMDD')).toBe('20100114');
   });
 
   it('parse from to correctly by from&to query parameters', () => {
@@ -72,6 +72,6 @@ describe('getFromTo', () => {
     const { data } = getFromTo(url);
 
     expect(data?.from.format('YYYYMMDD')).toBe('20220206');
-    expect(data?.to.format('YYYYMMDD')).toBe('20220220');
+    expect(data?.to.format('YYYYMMDD')).toBe('20220219');
   });
 });
