@@ -33,7 +33,7 @@
     "axios": "^0.27.2",
     "c8": "^7.12.0",
     "eslint": "^8.28.0",
-    "eslint-config-next": "^13.0.5",
+    "eslint-config-next": "^13.0.6",
     "prettier": "^2.7.1",
     "tsx": "^3.9.0",
     "typescript": "^4.8.2",
