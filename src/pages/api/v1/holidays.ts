@@ -21,5 +21,5 @@ export default function handler(req: NextRequest) {
 }
 
 export const config = {
-  runtime: 'experimental-edge',
+  runtime: 'edge',
 };
