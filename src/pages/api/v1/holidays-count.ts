@@ -22,4 +22,5 @@ export default function handler(req: NextRequest) {
 
 export const config = {
   runtime: 'edge',
+  regions: ['hnd1'],
 };
