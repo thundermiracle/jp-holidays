@@ -1,7 +1,8 @@
+import dayjs from 'dayjs';
+
 import { getHolidays } from 'src/utils/edgeHelpers';
 
-import { NextApiRequest, NextApiResponse } from 'next';
-import dayjs from 'dayjs';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const { from, to, only_weekday } = req.query;
