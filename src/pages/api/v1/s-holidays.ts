@@ -18,7 +18,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     only_weekday != null,
   );
 
-  return res.status(200).json({
-    holidays,
-  });
+  return res
+    .status(200)
+    .setHeader('Cache-Control', 'max-age=0, s-maxage=86400')
+    .json({
+      holidays,
+    });
 }
