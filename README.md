@@ -1,5 +1,9 @@
 # jp-holidays
 
+## How to make Edge Functions in Vercel
+
+[Vercel の Edge Functions で日本の祝日を検索するサービスを作ってみた](https://thundermiracle.com/blog/2022-08-28-vercel-edge-function/)
+
 ## Endpoints
 
 Base URL: `https://jp-holidays.vercel.app`
