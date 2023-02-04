@@ -1,0 +1,41 @@
+name: e2e
+on: [deployment_status]
+
+jobs:
+  api_test:
+    runs-on: ubuntu-latest
+    name: 'E2E Test'
+    timeout-minutes: 3
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Preview'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
+
+      - name: Get Vercel's Alias Preview URL
+        id: alias-preview-url
+        uses: justincase-jp/vercel-preview-url-alias@0.2.0
+        with:
+          vercel_access_token: ${{ secrets.VERCEL_ACCESS_TOKEN }}
+          vercel_team_id: ${{ secrets.VERCEL_TEAM_ID }}
+          vercel_project_id: ${{ secrets.VERCEL_PROJECT_ID }}
+          fail_when_cancelled: false
+
+      - name: Run Tests
+        if: steps.alias-preview-url.outputs.status == 'READY'
+        run: pnpm test:e2e
+        env:
+          E2E_BASE_URL: https://${{ steps.alias-preview-url.outputs.preview_url_origin }}

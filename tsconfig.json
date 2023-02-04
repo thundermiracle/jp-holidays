@@ -4,7 +4,8 @@
 
     "baseUrl": ".",
     "paths": {
-      "src/*": ["src/*"]
+      "src/*": ["src/*"],
+      "e2e/*": ["e2e/*"]
     },
     "types": ["vitest/globals"]
   },
