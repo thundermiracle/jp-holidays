@@ -36,11 +36,10 @@ jobs:
         id: update-jp-holidays
         if: steps.assert-pull-request-not-exists.outputs.result == 'true'
         run: |
-          git checkout -B github-actions/batch/jp-holidays-batch
-          git pull
           node ./dist/index.js
 
           if [ -n "$(git status -zu)" ]; then
+            git checkout -B github-actions/batch/jp-holidays-batch
             git add '*'
             git commit -m 'build: update jp-holidays.ts'
             git push origin github-actions/batch/jp-holidays-batch
