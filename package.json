@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@edge-runtime/vm": "2.1.2",
+    "@edge-runtime/vm": "3.0.0",
     "@vercel/ncc": "^0.36.1",
     "@types/node": "^18.16.16",
     "@types/react": "^18.2.7",
