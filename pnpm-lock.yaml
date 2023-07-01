@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   dayjs:
-    specifier: ^1.11.8
-    version: 1.11.8
+    specifier: ^1.11.9
+    version: 1.11.9
   next:
     specifier: ^13.4.7
     version: 13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -23,8 +23,8 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   '@types/node':
-    specifier: ^18.16.18
-    version: 18.16.18
+    specifier: ^18.16.19
+    version: 18.16.19
   '@types/react':
     specifier: ^18.2.14
     version: 18.2.14
@@ -39,7 +39,7 @@ devDependencies:
     version: 0.36.1
   '@web-configs/eslint-plugin':
     specifier: ^0.5.1
-    version: 0.5.1(@types/node@18.16.18)(eslint@8.43.0)(prettier@2.8.8)(typescript@5.1.6)
+    version: 0.5.1(@types/node@18.16.19)(eslint@8.43.0)(prettier@2.8.8)(typescript@5.1.6)
   '@web-configs/prettier':
     specifier: ^0.1.2
     version: 0.1.2
@@ -413,7 +413,7 @@ packages:
     resolution: {integrity: sha512-gIhjdJp/c2beaIWWIlsXdqXVRUz3r2BxBCpfz/F3JXHvSAQ1paMYjLH+maEATtENg+k5eLV7gA+9yPp762ieuw==}
     dev: true
 
-  /@graphql-eslint/eslint-plugin@3.19.1(@babel/core@7.22.5)(@types/node@18.16.18)(graphql@15.8.0):
+  /@graphql-eslint/eslint-plugin@3.19.1(@babel/core@7.22.5)(@types/node@18.16.19)(graphql@15.8.0):
     resolution: {integrity: sha512-8hllEu0dFXDk9poJRN0gIqrGoBblMe1TpRJFx0We+ZKWNQgaxvQ0QGmJPDak+BZV5BcOAM7m/GH2XWDgVB2nQA==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -426,7 +426,7 @@ packages:
       debug: 4.3.4
       fast-glob: 3.3.0
       graphql: 15.8.0
-      graphql-config: 4.5.0(@types/node@18.16.18)(graphql@15.8.0)
+      graphql-config: 4.5.0(@types/node@18.16.19)(graphql@15.8.0)
       graphql-depth-limit: 1.1.0(graphql@15.8.0)
       lodash.lowercase: 4.3.0
       tslib: 2.6.0
@@ -569,7 +569,7 @@ packages:
       value-or-promise: 1.0.11
     dev: true
 
-  /@graphql-tools/url-loader@7.13.2(@types/node@18.16.18)(graphql@15.8.0):
+  /@graphql-tools/url-loader@7.13.2(@types/node@18.16.19)(graphql@15.8.0):
     resolution: {integrity: sha512-4jtGecsxziiggQ9UryQB/ioqFwVkF10sKdk5bPg/fVKSkPddN5lvCgEwk20LojlDT9mDr53ME0ArMBKkvjTxBw==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -586,7 +586,7 @@ packages:
       graphql: 15.8.0
       graphql-ws: 5.9.1(graphql@15.8.0)
       isomorphic-ws: 5.0.0(ws@8.8.1)
-      meros: 1.2.0(@types/node@18.16.18)
+      meros: 1.2.0(@types/node@18.16.19)
       tslib: 2.6.0
       value-or-promise: 1.0.11
       ws: 8.8.1
@@ -900,8 +900,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@18.16.18:
-    resolution: {integrity: sha512-/aNaQZD0+iSBAGnvvN2Cx92HqE5sZCPZtx2TsK+4nvV23fFe09jVDvpArXr2j9DnYlzuU9WuoykDDc6wqvpNcw==}
+  /@types/node@18.16.19:
+    resolution: {integrity: sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==}
     dev: true
 
   /@types/prop-types@15.7.5:
@@ -934,7 +934,7 @@ packages:
     resolution: {integrity: sha512-tLfnlJf6A5mB6ddqF159GqcDizfzbMUB1/DeT59/wBNqzRTNNKsaw79A/1TZ84X+f/EwWH8FeuSkjlCLyqS/zQ==}
     dependencies:
       '@types/cookiejar': 2.1.2
-      '@types/node': 18.16.18
+      '@types/node': 18.16.19
     dev: true
 
   /@types/supertest@2.0.12:
@@ -946,7 +946,7 @@ packages:
   /@types/ws@8.5.3:
     resolution: {integrity: sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w==}
     dependencies:
-      '@types/node': 18.16.18
+      '@types/node': 18.16.19
     dev: true
 
   /@typescript-eslint/eslint-plugin@5.60.1(@typescript-eslint/parser@5.60.1)(eslint@8.43.0)(typescript@5.1.6):
@@ -1084,7 +1084,7 @@ packages:
     hasBin: true
     dev: true
 
-  /@web-configs/eslint-plugin@0.5.1(@types/node@18.16.18)(eslint@8.43.0)(prettier@2.8.8)(typescript@5.1.6):
+  /@web-configs/eslint-plugin@0.5.1(@types/node@18.16.19)(eslint@8.43.0)(prettier@2.8.8)(typescript@5.1.6):
     resolution: {integrity: sha512-MCwwGC4fTDTsitKnlxZDL0LYP+ak2d88YvGCQb31iRnmCtvm5gfCavfzICsnYlndrKhR3mVRKqXkFd8mcwqhow==}
     peerDependencies:
       eslint: ^8.42.0
@@ -1092,7 +1092,7 @@ packages:
       '@babel/core': 7.22.5
       '@babel/eslint-parser': 7.22.5(@babel/core@7.22.5)(eslint@8.43.0)
       '@babel/eslint-plugin': 7.22.5(@babel/eslint-parser@7.22.5)(eslint@8.43.0)
-      '@graphql-eslint/eslint-plugin': 3.19.1(@babel/core@7.22.5)(@types/node@18.16.18)(graphql@15.8.0)
+      '@graphql-eslint/eslint-plugin': 3.19.1(@babel/core@7.22.5)(@types/node@18.16.19)(graphql@15.8.0)
       '@typescript-eslint/eslint-plugin': 5.60.1(@typescript-eslint/parser@5.60.1)(eslint@8.43.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 5.60.1(eslint@8.43.0)(typescript@5.1.6)
       change-case: 4.1.2
@@ -1555,8 +1555,8 @@ packages:
     resolution: {integrity: sha512-qTcEYLen3r7ojZNgVUaRggOI+KM7jrKxXeSHhogh/TWxYMeONEMqY+hmkobiYQozsGIyg9OYVzO4ZIfoB4I0pQ==}
     dev: true
 
-  /dayjs@1.11.8:
-    resolution: {integrity: sha512-LcgxzFoWMEPO7ggRv1Y2N31hUf2R0Vj7fuy/m+Bg1K8rr+KAs1AEy4y9jd5DXe8pbHgX+srkHNS7TH6Q6ZhYeQ==}
+  /dayjs@1.11.9:
+    resolution: {integrity: sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==}
     dev: false
 
   /debug@3.2.7:
@@ -2990,7 +2990,7 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /graphql-config@4.5.0(@types/node@18.16.18)(graphql@15.8.0):
+  /graphql-config@4.5.0(@types/node@18.16.19)(graphql@15.8.0):
     resolution: {integrity: sha512-x6D0/cftpLUJ0Ch1e5sj1TZn6Wcxx4oMfmhaG9shM0DKajA9iR+j1z86GSTQ19fShbGvrSSvbIQsHku6aQ6BBw==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
@@ -3004,7 +3004,7 @@ packages:
       '@graphql-tools/json-file-loader': 7.4.1(graphql@15.8.0)
       '@graphql-tools/load': 7.7.1(graphql@15.8.0)
       '@graphql-tools/merge': 8.3.1(graphql@15.8.0)
-      '@graphql-tools/url-loader': 7.13.2(@types/node@18.16.18)(graphql@15.8.0)
+      '@graphql-tools/url-loader': 7.13.2(@types/node@18.16.19)(graphql@15.8.0)
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       cosmiconfig: 8.0.0
       graphql: 15.8.0
@@ -3469,7 +3469,7 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /meros@1.2.0(@types/node@18.16.18):
+  /meros@1.2.0(@types/node@18.16.19):
     resolution: {integrity: sha512-3QRZIS707pZQnijHdhbttXRWwrHhZJ/gzolneoxKVz9N/xmsvY/7Ls8lpnI9gxbgxjcHsAVEW3mgwiZCo6kkJQ==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -3478,7 +3478,7 @@ packages:
       '@types/node':
         optional: true
     dependencies:
-      '@types/node': 18.16.18
+      '@types/node': 18.16.19
     dev: true
 
   /methods@1.1.2:
@@ -4448,7 +4448,7 @@ packages:
       '@edge-runtime/vm': 3.0.3
       '@types/chai': 4.3.1
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.16.18
+      '@types/node': 18.16.19
       c8: 7.14.0
       chai: 4.3.6
       debug: 4.3.4
