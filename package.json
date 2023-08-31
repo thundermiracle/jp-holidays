@@ -1,7 +1,7 @@
 {
   "name": "jp-holidays",
   "version": "0.1.0",
-  "packageManager": "pnpm@8.6.11",
+  "packageManager": "pnpm@8.7.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -23,24 +23,24 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@edge-runtime/vm": "3.0.4",
+    "@edge-runtime/vm": "3.1.0",
     "@vercel/ncc": "^0.36.1",
-    "@types/node": "^18.17.1",
-    "@types/react": "^18.2.18",
+    "@types/node": "^18.17.12",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@types/supertest": "^2.0.12",
-    "@web-configs/eslint-plugin": "^0.5.1",
+    "@web-configs/eslint-plugin": "^0.5.2",
     "@web-configs/prettier": "^0.1.2",
     "@web-configs/typescript": "^0.2.2",
-    "axios": "^1.4.0",
+    "axios": "^1.5.0",
     "c8": "^7.14.0",
-    "dotenv-cli": "^7.2.1",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8.46.0",
     "eslint-config-next": "^13.4.19",
     "prettier": "^3.0.0",
     "supertest": "^6.3.3",
     "tsx": "^3.12.7",
-    "typescript": "^5.1.6",
+    "typescript": "^5.2.2",
     "vitest": "^0.20.3"
   },
   "prettier": "@web-configs/prettier"
