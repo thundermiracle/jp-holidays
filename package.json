@@ -39,7 +39,7 @@
     "eslint-config-next": "^13.4.19",
     "prettier": "^3.0.3",
     "supertest": "^6.3.3",
-    "tsx": "^3.12.7",
+    "tsx": "^3.12.8",
     "typescript": "^5.2.2",
     "vitest": "^0.20.3"
   },
