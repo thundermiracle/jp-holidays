@@ -1,7 +1,7 @@
 {
   "name": "jp-holidays",
   "version": "0.1.0",
-  "packageManager": "pnpm@8.13.1",
+  "packageManager": "pnpm@8.15.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -23,17 +23,17 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@edge-runtime/vm": "3.1.7",
+    "@edge-runtime/vm": "3.1.8",
     "@vercel/ncc": "^0.38.1",
-    "@types/node": "^20.10.6",
-    "@types/react": "^18.2.46",
+    "@types/node": "^20.11.13",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@types/supertest": "^6.0.2",
     "@vitest/coverage-v8": "^1.1.1",
     "@web-configs/eslint-plugin": "^0.5.2",
     "@web-configs/prettier": "^0.1.2",
     "@web-configs/typescript": "^0.2.2",
-    "axios": "^1.6.3",
+    "axios": "^1.6.7",
     "c8": "^8.0.1",
     "dotenv-cli": "^7.3.0",
     "eslint": "^8.56.0",
