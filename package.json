@@ -36,7 +36,7 @@
     "axios": "^1.6.8",
     "c8": "^9.1.0",
     "dotenv-cli": "^7.4.1",
-    "eslint": "^8.57.0",
+    "eslint": "^9.1.1",
     "eslint-config-next": "^14.2.3",
     "prettier": "^3.2.5",
     "supertest": "^6.3.4",
