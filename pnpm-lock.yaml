@@ -23,8 +23,8 @@ devDependencies:
     specifier: 3.2.0
     version: 3.2.0
   '@types/node':
-    specifier: ^20.12.13
-    version: 20.12.13
+    specifier: ^20.13.0
+    version: 20.13.0
   '@types/react':
     specifier: ^18.3.3
     version: 18.3.3
@@ -42,7 +42,7 @@ devDependencies:
     version: 1.6.0(vitest@1.6.0)
   '@web-configs/eslint-plugin':
     specifier: ^0.5.2
-    version: 0.5.2(@types/node@20.12.13)(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5)
+    version: 0.5.2(@types/node@20.13.0)(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5)
   '@web-configs/prettier':
     specifier: ^0.1.2
     version: 0.1.2
@@ -78,7 +78,7 @@ devDependencies:
     version: 5.4.5
   vitest:
     specifier: ^1.6.0
-    version: 1.6.0(@edge-runtime/vm@3.2.0)(@types/node@20.12.13)
+    version: 1.6.0(@edge-runtime/vm@3.2.0)(@types/node@20.13.0)
 
 packages:
 
@@ -843,7 +843,7 @@ packages:
     resolution: {integrity: sha512-gIhjdJp/c2beaIWWIlsXdqXVRUz3r2BxBCpfz/F3JXHvSAQ1paMYjLH+maEATtENg+k5eLV7gA+9yPp762ieuw==}
     dev: true
 
-  /@graphql-eslint/eslint-plugin@3.20.1(@babel/core@7.22.11)(@types/node@20.12.13)(graphql@15.8.0):
+  /@graphql-eslint/eslint-plugin@3.20.1(@babel/core@7.22.11)(@types/node@20.13.0)(graphql@15.8.0):
     resolution: {integrity: sha512-RbwVlz1gcYG62sECR1u0XqMh8w5e5XMCCZoMvPQ3nJzEBCTfXLGX727GBoRmSvY1x4gJmqNZ1lsOX7lZY14RIw==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -857,7 +857,7 @@ packages:
       debug: 4.3.4
       fast-glob: 3.3.0
       graphql: 15.8.0
-      graphql-config: 4.5.0(@types/node@20.12.13)(graphql@15.8.0)
+      graphql-config: 4.5.0(@types/node@20.13.0)(graphql@15.8.0)
       graphql-depth-limit: 1.1.0(graphql@15.8.0)
       lodash.lowercase: 4.3.0
       tslib: 2.6.0
@@ -1000,7 +1000,7 @@ packages:
       value-or-promise: 1.0.11
     dev: true
 
-  /@graphql-tools/url-loader@7.13.2(@types/node@20.12.13)(graphql@15.8.0):
+  /@graphql-tools/url-loader@7.13.2(@types/node@20.13.0)(graphql@15.8.0):
     resolution: {integrity: sha512-4jtGecsxziiggQ9UryQB/ioqFwVkF10sKdk5bPg/fVKSkPddN5lvCgEwk20LojlDT9mDr53ME0ArMBKkvjTxBw==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -1017,7 +1017,7 @@ packages:
       graphql: 15.8.0
       graphql-ws: 5.9.1(graphql@15.8.0)
       isomorphic-ws: 5.0.0(ws@8.8.1)
-      meros: 1.2.0(@types/node@20.12.13)
+      meros: 1.2.0(@types/node@20.13.0)
       tslib: 2.6.0
       value-or-promise: 1.0.11
       ws: 8.8.1
@@ -1459,8 +1459,8 @@ packages:
     resolution: {integrity: sha512-ymXWVrDiCxTBE3+RIrrP533E70eA+9qu7zdWoHuOmGujkYtzf4HQF96b8nwHLqhuf4ykX61IGRIB38CC6/sImQ==}
     dev: true
 
-  /@types/node@20.12.13:
-    resolution: {integrity: sha512-gBGeanV41c1L171rR7wjbMiEpEI/l5XFQdLLfhr/REwpgDy/4U8y89+i8kRiLzDyZdOkXh+cRaTetUnCYutoXA==}
+  /@types/node@20.13.0:
+    resolution: {integrity: sha512-FM6AOb3khNkNIXPnHFDYaHerSv8uN22C91z098AnGccVu+Pcdhi+pNUFDi0iLmPIsVE0JBD0KVS7mzUYt4nRzQ==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1491,7 +1491,7 @@ packages:
     dependencies:
       '@types/cookiejar': 2.1.5
       '@types/methods': 1.1.4
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
     dev: true
 
   /@types/supertest@6.0.2:
@@ -1504,7 +1504,7 @@ packages:
   /@types/ws@8.5.3:
     resolution: {integrity: sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w==}
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
     dev: true
 
   /@typescript-eslint/eslint-plugin@6.5.0(@typescript-eslint/parser@6.5.0)(eslint@9.3.0)(typescript@5.4.5):
@@ -1723,7 +1723,7 @@ packages:
       std-env: 3.7.0
       strip-literal: 2.0.0
       test-exclude: 6.0.0
-      vitest: 1.6.0(@edge-runtime/vm@3.2.0)(@types/node@20.12.13)
+      vitest: 1.6.0(@edge-runtime/vm@3.2.0)(@types/node@20.13.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1767,7 +1767,7 @@ packages:
       pretty-format: 29.7.0
     dev: true
 
-  /@web-configs/eslint-plugin@0.5.2(@types/node@20.12.13)(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5):
+  /@web-configs/eslint-plugin@0.5.2(@types/node@20.13.0)(eslint@9.3.0)(prettier@3.2.5)(typescript@5.4.5):
     resolution: {integrity: sha512-LQaboCtt9B4RfqmpN7MAkcwuWLt87WYfDvAslJJHl+wMb46S+PdD5VsRj683S5S2804/pi6UMcuU+yx8slzvAw==}
     peerDependencies:
       eslint: ^8.46.0
@@ -1775,7 +1775,7 @@ packages:
       '@babel/core': 7.22.11
       '@babel/eslint-parser': 7.22.11(@babel/core@7.22.11)(eslint@9.3.0)
       '@babel/eslint-plugin': 7.22.5(@babel/eslint-parser@7.22.11)(eslint@9.3.0)
-      '@graphql-eslint/eslint-plugin': 3.20.1(@babel/core@7.22.11)(@types/node@20.12.13)(graphql@15.8.0)
+      '@graphql-eslint/eslint-plugin': 3.20.1(@babel/core@7.22.11)(@types/node@20.13.0)(graphql@15.8.0)
       '@typescript-eslint/eslint-plugin': 6.5.0(@typescript-eslint/parser@6.5.0)(eslint@9.3.0)(typescript@5.4.5)
       '@typescript-eslint/parser': 6.5.0(eslint@9.3.0)(typescript@5.4.5)
       change-case: 4.1.2
@@ -3457,7 +3457,7 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /graphql-config@4.5.0(@types/node@20.12.13)(graphql@15.8.0):
+  /graphql-config@4.5.0(@types/node@20.13.0)(graphql@15.8.0):
     resolution: {integrity: sha512-x6D0/cftpLUJ0Ch1e5sj1TZn6Wcxx4oMfmhaG9shM0DKajA9iR+j1z86GSTQ19fShbGvrSSvbIQsHku6aQ6BBw==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
@@ -3471,7 +3471,7 @@ packages:
       '@graphql-tools/json-file-loader': 7.4.1(graphql@15.8.0)
       '@graphql-tools/load': 7.7.1(graphql@15.8.0)
       '@graphql-tools/merge': 8.3.1(graphql@15.8.0)
-      '@graphql-tools/url-loader': 7.13.2(@types/node@20.12.13)(graphql@15.8.0)
+      '@graphql-tools/url-loader': 7.13.2(@types/node@20.13.0)(graphql@15.8.0)
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       cosmiconfig: 8.0.0
       graphql: 15.8.0
@@ -4063,7 +4063,7 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /meros@1.2.0(@types/node@20.12.13):
+  /meros@1.2.0(@types/node@20.13.0):
     resolution: {integrity: sha512-3QRZIS707pZQnijHdhbttXRWwrHhZJ/gzolneoxKVz9N/xmsvY/7Ls8lpnI9gxbgxjcHsAVEW3mgwiZCo6kkJQ==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -4072,7 +4072,7 @@ packages:
       '@types/node':
         optional: true
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
     dev: true
 
   /methods@1.1.2:
@@ -5210,7 +5210,7 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /vite-node@1.6.0(@types/node@20.12.13):
+  /vite-node@1.6.0(@types/node@20.13.0):
     resolution: {integrity: sha512-de6HJgzC+TFzOu0NTC4RAIsyf/DY/ibWDYQUcuEA84EMHhcefTUGkjFHKKEJhQN4A+6I0u++kr3l36ZF2d7XRw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5219,7 +5219,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.0.10(@types/node@20.12.13)
+      vite: 5.0.10(@types/node@20.13.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5231,7 +5231,7 @@ packages:
       - terser
     dev: true
 
-  /vite@5.0.10(@types/node@20.12.13):
+  /vite@5.0.10(@types/node@20.13.0):
     resolution: {integrity: sha512-2P8J7WWgmc355HUMlFrwofacvr98DAjoE52BfdbwQtyLH06XKwaL/FMnmKM2crF0iX4MpmMKoDlNCB1ok7zHCw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5259,7 +5259,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       esbuild: 0.19.11
       postcss: 8.4.32
       rollup: 4.9.2
@@ -5267,7 +5267,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.6.0(@edge-runtime/vm@3.2.0)(@types/node@20.12.13):
+  /vitest@1.6.0(@edge-runtime/vm@3.2.0)(@types/node@20.13.0):
     resolution: {integrity: sha512-H5r/dN06swuFnzNFhq/dnz37bPXnq8xB2xB5JOVk8K09rUtoeNN+LHWkoQ0A/i3hvbUKKcCei9KpbxqHMLhLLA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5293,7 +5293,7 @@ packages:
         optional: true
     dependencies:
       '@edge-runtime/vm': 3.2.0
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
       '@vitest/snapshot': 1.6.0
@@ -5311,8 +5311,8 @@ packages:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.4
-      vite: 5.0.10(@types/node@20.12.13)
-      vite-node: 1.6.0(@types/node@20.12.13)
+      vite: 5.0.10(@types/node@20.13.0)
+      vite-node: 1.6.0(@types/node@20.13.0)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
