@@ -20,8 +20,8 @@ dependencies:
 
 devDependencies:
   '@edge-runtime/vm':
-    specifier: 3.2.0
-    version: 3.2.0
+    specifier: 4.0.1
+    version: 4.0.1
   '@types/node':
     specifier: ^20.14.14
     version: 20.14.14
@@ -78,7 +78,7 @@ devDependencies:
     version: 5.5.4
   vitest:
     specifier: ^2.0.5
-    version: 2.0.5(@edge-runtime/vm@3.2.0)(@types/node@20.14.14)
+    version: 2.0.5(@edge-runtime/vm@4.0.1)(@types/node@20.14.14)
 
 packages:
 
@@ -411,16 +411,16 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@edge-runtime/primitives@4.1.0:
-    resolution: {integrity: sha512-Vw0lbJ2lvRUqc7/soqygUX216Xb8T3WBZ987oywz6aJqRxcwSVWwr9e+Nqo2m9bxobA9mdbWNNoRY6S9eko1EQ==}
+  /@edge-runtime/primitives@5.0.1:
+    resolution: {integrity: sha512-qjqqCa9v3IE7Fo9OnmkIWg9l0WUu3uOfUYomuOVxaaHqlIvNI75E5IB0XNNDypz249ObRSmjRj8jLjkBUmFYYw==}
     engines: {node: '>=16'}
     dev: true
 
-  /@edge-runtime/vm@3.2.0:
-    resolution: {integrity: sha512-0dEVyRLM/lG4gp1R/Ik5bfPl/1wX00xFwd5KcNH602tzBa09oF7pbTKETEhR1GjZ75K6OJnYFu8II2dyMhONMw==}
+  /@edge-runtime/vm@4.0.1:
+    resolution: {integrity: sha512-jYXrosmxlahsgLlChnSTRIfoOkcg+U+7jMEFvV5pQ9mJ7BrM2O4Kb+n/IDardpgEWZsXLBC9Y2RN7nhpuX7PTQ==}
     engines: {node: '>=16'}
     dependencies:
-      '@edge-runtime/primitives': 4.1.0
+      '@edge-runtime/primitives': 5.0.1
     dev: true
 
   /@esbuild/aix-ppc64@0.19.11:
@@ -1770,7 +1770,7 @@ packages:
       std-env: 3.7.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.0.5(@edge-runtime/vm@3.2.0)(@types/node@20.14.14)
+      vitest: 2.0.5(@edge-runtime/vm@4.0.1)(@types/node@20.14.14)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5311,7 +5311,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@2.0.5(@edge-runtime/vm@3.2.0)(@types/node@20.14.14):
+  /vitest@2.0.5(@edge-runtime/vm@4.0.1)(@types/node@20.14.14):
     resolution: {integrity: sha512-8GUxONfauuIdeSl5f9GTgVEpg5BTOlplET4WEDaeY2QBiN8wSm68vxN/tb5z405OwppfoCavnwXafiaYBC/xOA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -5337,7 +5337,7 @@ packages:
         optional: true
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@edge-runtime/vm': 3.2.0
+      '@edge-runtime/vm': 4.0.1
       '@types/node': 20.14.14
       '@vitest/expect': 2.0.5
       '@vitest/pretty-format': 2.0.5
