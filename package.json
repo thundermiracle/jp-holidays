@@ -34,7 +34,7 @@
     "@web-configs/prettier": "^0.1.2",
     "@web-configs/typescript": "^0.2.2",
     "axios": "^1.7.7",
-    "c8": "^9.1.0",
+    "c8": "^10.1.2",
     "dotenv-cli": "^7.4.2",
     "eslint": "^9.9.1",
     "eslint-config-next": "^14.2.7",
