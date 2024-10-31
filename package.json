@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.13",
-    "next": "^14.2.15",
+    "next": "^14.2.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -37,7 +37,7 @@
     "c8": "^10.1.2",
     "dotenv-cli": "^7.4.2",
     "eslint": "^9.11.1",
-    "eslint-config-next": "^14.2.14",
+    "eslint-config-next": "^14.2.16",
     "prettier": "^3.3.3",
     "supertest": "^7.0.0",
     "tsx": "^4.19.1",
