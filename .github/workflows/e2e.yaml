@@ -14,7 +14,9 @@ jobs:
           fetch-depth: 0
 
       - name: Enable corepack
-        run: corepack enable
+        run: |
+          corepack enable pnpm
+          corepack prepare pnpm@9.15.4 --activate
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
