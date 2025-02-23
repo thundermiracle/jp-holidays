@@ -21,8 +21,7 @@ jobs:
 
       - name: Enable corepack
         run: |
-          corepack enable pnpm
-          corepack prepare pnpm@10.4.0 --activate
+          corepack prepare pnpm@9.15.4 --activate
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
