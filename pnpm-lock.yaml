@@ -25,8 +25,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       '@types/node':
-        specifier: ^22.15.29
-        version: 22.15.29
+        specifier: ^22.15.34
+        version: 22.15.34
       '@types/react':
         specifier: ^19.1.6
         version: 19.1.6
@@ -41,10 +41,10 @@ importers:
         version: 0.38.3
       '@vitest/coverage-v8':
         specifier: ^3.2.0
-        version: 3.2.0(vitest@3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.29))
+        version: 3.2.0(vitest@3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.34))
       '@web-configs/eslint-plugin':
         specifier: ^0.5.2
-        version: 0.5.2(@types/node@22.15.29)(eslint@9.28.0(jiti@1.17.1))(prettier@3.5.3)(typescript@5.8.3)
+        version: 0.5.2(@types/node@22.15.34)(eslint@9.28.0(jiti@1.17.1))(prettier@3.5.3)(typescript@5.8.3)
       '@web-configs/prettier':
         specifier: ^0.1.2
         version: 0.1.2
@@ -52,8 +52,8 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2
       axios:
-        specifier: ^1.9.0
-        version: 1.9.0
+        specifier: ^1.10.0
+        version: 1.10.0
       c8:
         specifier: ^10.1.3
         version: 10.1.3
@@ -73,14 +73,14 @@ importers:
         specifier: ^7.1.1
         version: 7.1.1
       tsx:
-        specifier: ^4.19.4
-        version: 4.19.4
+        specifier: ^4.20.3
+        version: 4.20.3
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
       vitest:
         specifier: ^3.2.0
-        version: 3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.29)
+        version: 3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.34)
 
 packages:
 
@@ -1017,8 +1017,8 @@ packages:
   '@types/methods@1.1.4':
     resolution: {integrity: sha512-ymXWVrDiCxTBE3+RIrrP533E70eA+9qu7zdWoHuOmGujkYtzf4HQF96b8nwHLqhuf4ykX61IGRIB38CC6/sImQ==}
 
-  '@types/node@22.15.29':
-    resolution: {integrity: sha512-LNdjOkUDlU1RZb8e1kOIUpN1qQUlzGkEtbVNo53vbrwDg5om6oduhm4SiUaPW5ASTXhAiP0jInWG8Qx9fVlOeQ==}
+  '@types/node@22.15.34':
+    resolution: {integrity: sha512-8Y6E5WUupYy1Dd0II32BsWAx5MWdcnRd8L84Oys3veg1YrYtNtzgO4CFhiBg6MDSjk7Ay36HYOnU7/tuOzIzcw==}
 
   '@types/react-dom@19.1.5':
     resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
@@ -1336,8 +1336,8 @@ packages:
     resolution: {integrity: sha512-zIURGIS1E1Q4pcrMjp+nnEh+16G56eG/MUllJH8yEvw7asDo7Ac9uhC9KIH5jzpITueEZolfYglnCGIuSBz39g==}
     engines: {node: '>=4'}
 
-  axios@1.9.0:
-    resolution: {integrity: sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg==}
+  axios@1.10.0:
+    resolution: {integrity: sha512-/1xYAC4MP/HEG+3duIhFr4ZQXR4sQXOIe+o6sdqzeykGLx6Upp/1p8MHqhINOvGeP7xyNHe7tsiJByc4SSVUxw==}
 
   axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
@@ -3165,8 +3165,8 @@ packages:
     peerDependencies:
       typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
 
-  tsx@4.19.4:
-    resolution: {integrity: sha512-gK5GVzDkJK1SI1zwHf32Mqxf2tSJkNx+eYcNly5+nHvWqXUJYUkWBQtKauoESz3ymezAI++ZwT855x5p5eop+Q==}
+  tsx@4.20.3:
+    resolution: {integrity: sha512-qjbnuR9Tr+FJOMBqJCW5ehvIo/buZq7vH7qD7JziU98h6l3qGy0a/yPFjwO+y0/T7GFpNgNAvEcPPVfyT8rrPQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3806,7 +3806,7 @@ snapshots:
 
   '@github/browserslist-config@1.0.0': {}
 
-  '@graphql-eslint/eslint-plugin@3.20.1(@babel/core@7.22.11)(@types/node@22.15.29)(graphql@15.8.0)':
+  '@graphql-eslint/eslint-plugin@3.20.1(@babel/core@7.22.11)(@types/node@22.15.34)(graphql@15.8.0)':
     dependencies:
       '@babel/code-frame': 7.22.5
       '@graphql-tools/code-file-loader': 7.3.23(@babel/core@7.22.11)(graphql@15.8.0)
@@ -3816,7 +3816,7 @@ snapshots:
       debug: 4.4.0
       fast-glob: 3.3.0
       graphql: 15.8.0
-      graphql-config: 4.5.0(@types/node@22.15.29)(graphql@15.8.0)
+      graphql-config: 4.5.0(@types/node@22.15.34)(graphql@15.8.0)
       graphql-depth-limit: 1.1.0(graphql@15.8.0)
       lodash.lowercase: 4.3.0
       tslib: 2.8.1
@@ -3918,7 +3918,7 @@ snapshots:
       tslib: 2.8.1
       value-or-promise: 1.0.11
 
-  '@graphql-tools/url-loader@7.13.2(@types/node@22.15.29)(graphql@15.8.0)':
+  '@graphql-tools/url-loader@7.13.2(@types/node@22.15.34)(graphql@15.8.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1
       '@graphql-tools/delegate': 8.8.1(graphql@15.8.0)
@@ -3932,7 +3932,7 @@ snapshots:
       graphql: 15.8.0
       graphql-ws: 5.9.1(graphql@15.8.0)
       isomorphic-ws: 5.0.0(ws@8.8.1)
-      meros: 1.2.0(@types/node@22.15.29)
+      meros: 1.2.0(@types/node@22.15.34)
       tslib: 2.8.1
       value-or-promise: 1.0.11
       ws: 8.8.1
@@ -4238,7 +4238,7 @@ snapshots:
 
   '@types/methods@1.1.4': {}
 
-  '@types/node@22.15.29':
+  '@types/node@22.15.34':
     dependencies:
       undici-types: 6.21.0
 
@@ -4256,7 +4256,7 @@ snapshots:
     dependencies:
       '@types/cookiejar': 2.1.5
       '@types/methods': 1.1.4
-      '@types/node': 22.15.29
+      '@types/node': 22.15.34
 
   '@types/supertest@6.0.3':
     dependencies:
@@ -4265,7 +4265,7 @@ snapshots:
 
   '@types/ws@8.5.3':
     dependencies:
-      '@types/node': 22.15.29
+      '@types/node': 22.15.34
 
   '@typescript-eslint/eslint-plugin@6.5.0(@typescript-eslint/parser@6.5.0(eslint@9.28.0(jiti@1.17.1))(typescript@5.8.3))(eslint@9.28.0(jiti@1.17.1))(typescript@5.8.3)':
     dependencies:
@@ -4395,7 +4395,7 @@ snapshots:
 
   '@vercel/ncc@0.38.3': {}
 
-  '@vitest/coverage-v8@3.2.0(vitest@3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.29))':
+  '@vitest/coverage-v8@3.2.0(vitest@3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.34))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
@@ -4410,7 +4410,7 @@ snapshots:
       std-env: 3.9.0
       test-exclude: 7.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.29)
+      vitest: 3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.34)
     transitivePeerDependencies:
       - supports-color
 
@@ -4422,13 +4422,13 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.2.0(vite@5.0.10(@types/node@22.15.29))':
+  '@vitest/mocker@3.2.0(vite@5.0.10(@types/node@22.15.34))':
     dependencies:
       '@vitest/spy': 3.2.0
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      vite: 5.0.10(@types/node@22.15.29)
+      vite: 5.0.10(@types/node@22.15.34)
 
   '@vitest/pretty-format@3.2.0':
     dependencies:
@@ -4455,12 +4455,12 @@ snapshots:
       loupe: 3.1.3
       tinyrainbow: 2.0.0
 
-  '@web-configs/eslint-plugin@0.5.2(@types/node@22.15.29)(eslint@9.28.0(jiti@1.17.1))(prettier@3.5.3)(typescript@5.8.3)':
+  '@web-configs/eslint-plugin@0.5.2(@types/node@22.15.34)(eslint@9.28.0(jiti@1.17.1))(prettier@3.5.3)(typescript@5.8.3)':
     dependencies:
       '@babel/core': 7.22.11
       '@babel/eslint-parser': 7.22.11(@babel/core@7.22.11)(eslint@9.28.0(jiti@1.17.1))
       '@babel/eslint-plugin': 7.22.5(@babel/eslint-parser@7.22.11(@babel/core@7.22.11)(eslint@9.28.0(jiti@1.17.1)))(eslint@9.28.0(jiti@1.17.1))
-      '@graphql-eslint/eslint-plugin': 3.20.1(@babel/core@7.22.11)(@types/node@22.15.29)(graphql@15.8.0)
+      '@graphql-eslint/eslint-plugin': 3.20.1(@babel/core@7.22.11)(@types/node@22.15.34)(graphql@15.8.0)
       '@typescript-eslint/eslint-plugin': 6.5.0(@typescript-eslint/parser@6.5.0(eslint@9.28.0(jiti@1.17.1))(typescript@5.8.3))(eslint@9.28.0(jiti@1.17.1))(typescript@5.8.3)
       '@typescript-eslint/parser': 6.5.0(eslint@9.28.0(jiti@1.17.1))(typescript@5.8.3)
       change-case: 4.1.2
@@ -4710,7 +4710,7 @@ snapshots:
 
   axe-core@4.7.2: {}
 
-  axios@1.9.0:
+  axios@1.10.0:
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -5851,13 +5851,13 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql-config@4.5.0(@types/node@22.15.29)(graphql@15.8.0):
+  graphql-config@4.5.0(@types/node@22.15.34)(graphql@15.8.0):
     dependencies:
       '@graphql-tools/graphql-file-loader': 7.5.0(graphql@15.8.0)
       '@graphql-tools/json-file-loader': 7.4.1(graphql@15.8.0)
       '@graphql-tools/load': 7.7.1(graphql@15.8.0)
       '@graphql-tools/merge': 8.3.1(graphql@15.8.0)
-      '@graphql-tools/url-loader': 7.13.2(@types/node@22.15.29)(graphql@15.8.0)
+      '@graphql-tools/url-loader': 7.13.2(@types/node@22.15.34)(graphql@15.8.0)
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       cosmiconfig: 8.0.0
       graphql: 15.8.0
@@ -6226,9 +6226,9 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  meros@1.2.0(@types/node@22.15.29):
+  meros@1.2.0(@types/node@22.15.34):
     optionalDependencies:
-      '@types/node': 22.15.29
+      '@types/node': 22.15.34
 
   methods@1.1.2: {}
 
@@ -6919,7 +6919,7 @@ snapshots:
       tslib: 1.14.1
       typescript: 5.8.3
 
-  tsx@4.19.4:
+  tsx@4.20.3:
     dependencies:
       esbuild: 0.25.1
       get-tsconfig: 4.7.5
@@ -7038,13 +7038,13 @@ snapshots:
 
   value-or-promise@1.0.11: {}
 
-  vite-node@3.2.0(@types/node@22.15.29):
+  vite-node@3.2.0(@types/node@22.15.34):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 5.0.10(@types/node@22.15.29)
+      vite: 5.0.10(@types/node@22.15.34)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -7055,20 +7055,20 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.0.10(@types/node@22.15.29):
+  vite@5.0.10(@types/node@22.15.34):
     dependencies:
       esbuild: 0.19.11
       postcss: 8.4.32
       rollup: 4.9.2
     optionalDependencies:
-      '@types/node': 22.15.29
+      '@types/node': 22.15.34
       fsevents: 2.3.3
 
-  vitest@3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.29):
+  vitest@3.2.0(@edge-runtime/vm@5.0.0)(@types/node@22.15.34):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.0
-      '@vitest/mocker': 3.2.0(vite@5.0.10(@types/node@22.15.29))
+      '@vitest/mocker': 3.2.0(vite@5.0.10(@types/node@22.15.34))
       '@vitest/pretty-format': 3.2.0
       '@vitest/runner': 3.2.0
       '@vitest/snapshot': 3.2.0
@@ -7086,12 +7086,12 @@ snapshots:
       tinyglobby: 0.2.14
       tinypool: 1.1.0
       tinyrainbow: 2.0.0
-      vite: 5.0.10(@types/node@22.15.29)
-      vite-node: 3.2.0(@types/node@22.15.29)
+      vite: 5.0.10(@types/node@22.15.34)
+      vite-node: 3.2.0(@types/node@22.15.34)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@edge-runtime/vm': 5.0.0
-      '@types/node': 22.15.29
+      '@types/node': 22.15.34
     transitivePeerDependencies:
       - less
       - lightningcss
